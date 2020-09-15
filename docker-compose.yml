@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   cli:
-    image: dockersf/letsencrypt-manager:latest
+    image: cornernote/letsencrypt-manager:latest
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /var/lib/letsencrypt:/var/lib/letsencrypt
@@ -9,7 +9,7 @@ services:
       - ./cli.ini:/root/.config/letsencrypt/cli.ini
 
   cron:
-    image: dockersf/letsencrypt-manager:latest
+    image: cornernote/letsencrypt-manager:latest
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /var/lib/letsencrypt:/var/lib/letsencrypt
