@@ -1,4 +1,4 @@
-This is based on the great work by the bringnow team, I am just trying to keep it going with updates. I am not currently looking at adding any new features, but if it seems easy enough I might try to tackle them, so just let me know.
+Forked pending this issue: https://github.com/bringnow/docker-letsencrypt-manager/issues/15
 
 # docker-letsencrypt-manager
 A docker image allowing you to manage your domains and certificates and automatically renews them. It is based on the [official letsencrypt docker image](https://letsencrypt.readthedocs.org/en/latest/using.html#running-with-docker). It uses the [ACME webroot method](http://letsencrypt.readthedocs.org/en/latest/using.html#webroot) to perform domain validation, allowing zero-downtime certificate renewals.
@@ -13,7 +13,7 @@ If you install a machine which should be able to request and automatically renew
 
 1. Clone letsencrypt-manager
 ```
-# cd /opt/ && git clone https://github.com/gitsf/docker-letsencrypt-manager.git && cd docker-letsencrypt-manager
+# cd /opt/ && git clone https://github.com/cornernote/docker-letsencrypt-manager.git && cd docker-letsencrypt-manager
 ```
 3. Add an alias for letsencrypt-manager (optional):
 ```
